@@ -1,0 +1,13 @@
+{
+  "name": "discord-auto-checkin",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  "triggers": { "crons": ["* * * * *"] },
+  "kv_namespaces": [{ "binding": "STATE" }],
+  "vars": {
+    "CHANNEL_ID": "ISI_ID_CHANNEL_DISCORD",
+    "MESSAGE": "checkin",
+    "INTERVAL_HOURS": "6"
+  },
+  "observability": { "enabled": true }
+}
